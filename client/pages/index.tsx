@@ -1,7 +1,7 @@
 import Chart from '../components/Chart';
 
 type Props = {
-  data: [];
+  data: number[][];
 };
 
 const IndexPage = (props: Props) => {
@@ -10,7 +10,6 @@ const IndexPage = (props: Props) => {
 
 export async function getServerSideProps() {
   const res = await fetch('http://159.65.123.22:3001/api/daily');
-  //const res = await fetch('http://localhost:3001/api/daily');
   const data = await res.json();
   return {
     props: { data },

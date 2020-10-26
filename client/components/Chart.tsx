@@ -8,7 +8,7 @@ if (typeof Highcharts === 'object') {
 }
 
 type Props = {
-  data: [];
+  data: number[][];
 };
 
 const Chart = (props: Props) => {
@@ -23,15 +23,11 @@ const Chart = (props: Props) => {
       },
     },
 
-    //rgba(124, 181, 236, 0.4);
-    //rgba(133, 199, 222, 0.4);
-
     series: [
       {
         name: 'AAPL',
         type: 'area',
         data: props.data,
-        //data: mockData,
         tooltip: {
           valueDecimals: 2,
         },
