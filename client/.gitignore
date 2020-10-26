@@ -1,17 +1,17 @@
 # dependencies
 node_modules
-client/.pnp
-client/.pnp.js
+/.pnp
+.pnp.js
 
 # testing
-client/coverage
+/coverage
 
 # next.js
-client/.next/
-client/out/
+.next/
+out/
 
 # production
-client/build
+build
 
 # misc
 .DS_Store
@@ -29,4 +29,4 @@ yarn-error.log*
 .env.production.local
 
 # vercel
-client/.vercel
+.vercel

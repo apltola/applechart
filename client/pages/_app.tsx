@@ -3,13 +3,13 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import Layout from '../components/Layout';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const AppComponent = ({ Component, pageProps }: AppProps) => {
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
   );
-}
+};
 
 /* export function getServerSideProps(ctx) {
   console.log('serverside', ctx);
@@ -20,4 +20,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   };
 } */
 
-export default MyApp;
+export default AppComponent;

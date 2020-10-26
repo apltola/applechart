@@ -1,17 +1,19 @@
+import Chart from '../components/Chart';
+
 type Props = {
   data: object;
 };
 
 const IndexPage = (props: Props) => (
   <div>
-    <h1>Hello Next.js 👋</h1>
-    <div>server status: {props.data}</div>
+    <Chart data={props.data} />
   </div>
 );
 
 export async function getServerSideProps() {
-  const res = await fetch('http://159.65.123.22:3001/status');
-  const data = await res.text();
+  //const res = await fetch('http://159.65.123.22:3001/api/query/daily');
+  const res = await fetch('http://localhost:3001/api/daily');
+  const data = await res.json();
   return {
     props: { data },
   };
