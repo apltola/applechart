@@ -24,7 +24,9 @@ const Layout = ({ children, title = 'Apple Chart' }: Props) => {
             </Link>
           </nav>
         </header>
-        <main className={styles.appMain}>{children}</main>
+        <div className={styles.appContent}>
+          <main className={styles.appMain}>{children}</main>
+        </div>
         <footer className={styles.appFooter}>
           <span>this is the footer</span>
         </footer>

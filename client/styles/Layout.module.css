@@ -11,11 +11,18 @@
   font-size: 20px;
 }
 
-.appMain {
+.appContent {
   flex: 1;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  padding: 80px 10px;
+}
+
+.appMain {
+  flex: 1;
+  min-width: 0;
+  max-width: 1000px;
 }
 
 .appFooter {
