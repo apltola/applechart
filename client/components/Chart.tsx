@@ -1,7 +1,6 @@
 import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 import HighchartsExporting from 'highcharts/modules/exporting';
-import mockData from '../utils/mock';
 import styles from '../styles/Chart.module.css';
 
 if (typeof Highcharts === 'object') {
