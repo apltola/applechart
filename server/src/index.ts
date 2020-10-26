@@ -7,15 +7,11 @@ app.use(cors());
 
 app.use(router);
 
-app.get('/api', (req, res) => {
-  res.send('hello this is the api root');
-});
-
 app.get('/status', (req, res) => {
-  res.send(`server is online, node_env: ${process.env.NODE_ENV}`);
+  res.send(`server is online`);
 });
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log('Server listening @ 3001');
+  console.log(`Server listening @ ${PORT}`);
 });

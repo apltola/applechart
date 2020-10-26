@@ -1,7 +1,7 @@
 import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
 import HighchartsExporting from 'highcharts/modules/exporting';
-import mockData from '../mock';
+import mockData from '../utils/mock';
 import styles from '../styles/Chart.module.css';
 
 if (typeof Highcharts === 'object') {
@@ -27,20 +27,12 @@ const Chart = (props: Props) => {
     //rgba(124, 181, 236, 0.4);
     //rgba(133, 199, 222, 0.4);
 
-    colorAxis: [
-      {
-        gridLineColor: '#000',
-        gridLineWidth: 2,
-        lineColor: 'red',
-      },
-    ],
-
     series: [
       {
         name: 'AAPL',
         type: 'area',
-        //data: props.data,
-        data: mockData,
+        data: props.data,
+        //data: mockData,
         tooltip: {
           valueDecimals: 2,
         },
@@ -67,7 +59,6 @@ const Chart = (props: Props) => {
         highcharts={Highcharts}
         constructorType={'stockChart'}
         options={options}
-        /* containerProps={{ style: { margin: '30px' } }} */
       />
     </div>
   );
