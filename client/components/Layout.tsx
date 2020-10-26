@@ -28,7 +28,16 @@ const Layout = ({ children, title = 'Apple Chart' }: Props) => {
           <main className={styles.appMain}>{children}</main>
         </div>
         <footer className={styles.appFooter}>
-          <span>this is the footer</span>
+          <span>
+            check the code on{' '}
+            <a
+              href="https://github.com/apltola/applechart"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </span>
         </footer>
       </div>
     </React.Fragment>
