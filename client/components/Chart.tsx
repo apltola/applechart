@@ -26,23 +26,11 @@ const Chart = (props: Props) => {
     series: [
       {
         name: 'AAPL',
-        type: 'area',
+        id: 'aapl',
+        type: 'line',
         data: props.data,
         tooltip: {
           valueDecimals: 2,
-        },
-        fillOpacity: 0.4,
-        fillColor: {
-          linearGradient: {
-            x1: 0,
-            y1: 0,
-            x2: 0,
-            y2: 1,
-          },
-          stops: [
-            [0, 'rgba(124, 181, 236, 1)'],
-            [1, 'rgba(124, 181, 236, 0)'],
-          ],
         },
       },
     ],
