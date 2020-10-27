@@ -11,13 +11,4 @@ const AppComponent = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-/* export function getServerSideProps(ctx) {
-  console.log('serverside', ctx);
-  return {
-    pageProps: {
-      message: 'juukeli',
-    },
-  };
-} */
-
 export default AppComponent;

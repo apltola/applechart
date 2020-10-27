@@ -12,7 +12,6 @@ type Props = {
 };
 
 const Chart = (props: Props) => {
-  console.log('data.length -> ', props.data.length);
   const options: Highcharts.Options = {
     title: {
       text: 'Apple Inc. (AAPL)',
